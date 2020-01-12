@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>First</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo logo">
+          <span class="logo__top-line logo__line">
+            <span></span>
+            <span></span>
+            <span class="logo__large"></span>
+            <span></span>
+          </span>
+          <span class="logo__second-line logo__line">
+            <span class="logo__large"></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div class="header__brand">
+          <h2>FutureDialog</h2>
+          <p>smart mobile dialogue</p>
+        </div>
+        <div class="header__main">
+          <form action="#" class="header__search search">
+            <input type="search" />
+            <input type="submit" class="icon" />
+          </form>
+          <div class="header__controls controls">
+            <button class="controls__btn add-btn btn-primary main-accent-text">
+              <span>+</span> Add card
+            </button>
+            <ul class="controls__navigation">
+              <li>
+                <a href="#" class="icon"></a>
+              </li>
+              <li>
+                <a href="#" class="icon">
+                  <span class="controls__counter counter">3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__personal personal">
+          <div class="personal__info">
+            <strong class="personal__status">
+              Superadmin
+            </strong>
+            <ul class="personal__additional">
+              <li>Tampere</li>
+              <li>Tampereen Raati</li>
+            </ul>
+          </div>
+          <div class="personal__settings">
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="center-wrapper">
+          <aside class="sidebar">
+              <nav class="sidebar__navigation main-nav">
+                <ul>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Dashboard</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Cards</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Feedback</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Open 311</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>RSS Feed</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Analytics</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Retention</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Metrics</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Targeting</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Reports</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon"></span><span>Users</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <main class="main content">
+              <div class="content__header">
+                <div class="content__block">
+                  <h2 class="content__title">Cards</h2>
+                  <div class="content__my-activity range"></div>
+                  <span class="main-accent-text">show only my activity</span>
+                </div>
+                <div class="content__toolbar toolbar">
+                  <button class="toolbar__btn btn-primary">
+                    <span class="icon"></span> Languages
+                  </button>
+                  <button class="toolbar__btn btn-primary">
+                    <span class="icon"></span> categories
+                  </button>
+                  <button class="toolbar__btn btn-primary">
+                    <span class="icon"></span> add card
+                  </button>
+                </div>
+              </div>
+              <section class="interaction">
+                <div class="interaction__tabs tabs">
+                  <ul class="tabs__list">
+                    <li class="active-tab">
+                      <strong class="main-accent-text">All items</strong>
+                      <span>(299)</span>
+                    </li>
+                    <li>
+                      <span class="green-marker activity-marker"></span>
+                      <strong>Active</strong>
+                      <span>(99)</span>
+                    </li>
+                    <li>
+                      <span class="orange-marker activity-marker"></span>
+                      <strong>scheduled</strong>
+                      <span>(23)</span>
+                    </li>
+                    <li>
+                      <span class="red-marker activity-marker"></span>
+                      <strong>expired</strong>
+                      <span>(39)</span>
+                    </li>
+                    <li>
+                      <span class="icon"></span>
+                      <strong>archived</strong>
+                      <span>(39)</span>
+                    </li>
+                    <li>
+                      <span class="icon"></span>
+                      <strong>from rss</strong>
+                      <span>(99)</span>
+                    </li>
+                  </ul>
+                  <div class="interaction__showing">
+                    <p>Showing 1-20 of 299</p>
+                  </div>
+                </div>
+                <div class="interaction__body">
+                  <div class="interaction__filter filter">
+                    <div class="select filter__select">
+                      <strong>Filters</strong> <span></span>
+                    </div>
+                    <ul class="filter__list">
+                      <li>
+                        <span class="icon"></span>
+                        <span>Yes/No</span>
+                        <span class="close"></span>
+                      </li>
+                      <li>
+                        <span class="icon"></span>
+                        <span>Age range 30-60</span>
+                        <span class="close"></span>
+                      </li>
+                      <li>
+                        <span class="icon"></span>
+                        <span>Newspaper</span>
+                        <span class="close"></span>
+                      </li>
+                    </ul>
+                    <div class="filter__clear hint" data-help="Clear all">
+                      <span class="icon"></span>
+                    </div>
+                  </div>
+                  <div class="integration__sort sort">
+                    <strong class="sort__title">sort by:</strong>
+                    <div class="select sort__select">
+                      <strong>Not selected</strong><span></span>
+                    </div>
+                    <div class="sort__more">
+                      <button><span class="icon"></span></button>
+                    </div>
+                    <form action="#" class="sort__search search">
+                      <input type="search" />
+                      <input type="submit" class="icon" />
+                    </form>
+                  </div>
+                </div>
+              </section>
+              <section class="folders">
+                <div class="folder">
+                  <div class="df-row">
+                    <div class="large-icon"></div>
+                    <div class="folder__description">
+                      <strong class="folder__name">Cards about parking</strong>
+                      <span class="folder__card-counter">0 cards</span>
+                    </div>
+                  </div>
+                  <label for="selectFolder-1" class="checkbox">
+                    <input type="checkbox" id="selectFolder-1" />
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+                <div class="folder">
+                  <div class="df-row">
+                    <div class="large-icon" not-empty></div>
+                    <div class="folder__description">
+                      <strong class="folder__name">Helsinki Government</strong>
+                      <span class="folder__card-counter">23 cards</span>
+                    </div>
+                  </div>
+                  <label for="selectFolder-2" class="checkbox">
+                    <input type="checkbox" id="selectFolder-2" />
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+                <div class="folder">
+                  <div class="df-row">
+                    <div class="large-icon" not-empty></div>
+                    <div class="folder__description">
+                      <strong class="folder__name">Citizens</strong>
+                      <span class="folder__card-counter">999 cards</span>
+                    </div>
+                  </div>
+                  <label for="selectFolder-3" class="checkbox">
+                    <input type="checkbox" id="selectFolder-3" />
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+                <div class="folder">
+                  <div class="df-row">
+                    <div class="large-icon"></div>
+                    <div class="folder__description">
+                      <strong class="folder__name">Cards about parking</strong>
+                      <span class="folder__card-counter">0 cards</span>
+                    </div>
+                  </div>
+                  <label for="selectFolder-4" class="checkbox">
+                    <input type="checkbox" id="selectFolder-4" />
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+              </section>
+              <section class="cards-list">
+                <div class="card-list__block card-block">
+                  <div class="card-block__header">
+                    <div class="df-row justify-content-between">
+                      <div class="card-block__activity">
+                        <label for="selectCard-1" class="checkbox">
+                          <input type="checkbox" id="selectCard-1" />
+                          <span class="fake-checkbox"></span>
+                        </label>
+                      </div>
+                      <div class="df-row align-items-center">
+                        <ul class="card-block__countries-list">
+                          <li><span class="small-round-icon"></span></li>
+                          <li><span class="small-round-icon"></span></li>
+                        </ul>
+                        <span
+                          class="green-marker activity-marker hint"
+                          data-help="Active"
+                        ></span>
+                      </div>
+                    </div>
+                    <ul class="card-block__filter-list">
+                      <li><span class="icon"></span><span>yes/no</span></li>
+                      <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                    </ul>
+                    <div class="card-block__body">
+                      <div class="card-block__date">
+                        <span>19.09.17 at 15:58</span>
+                      </div>
+                      <div class="card-block__comment">
+                        <p>
+                          Airport hotel the right way to start a short break holiday
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="card-block__group-list">
+                      <li>
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-block__additional-info info">
+                    <div class="info__column">
+                      <div class="info__viewed-count info__item">
+                        <span class="icon"></span><span>69</span>
+                      </div>
+                      <div class="info__comments-count info__item">
+                        <span class="icon"></span><span>23</span>
+                      </div>
+                      <div class="info__admin-card info__item">
+                        <span class="icon"></span><span>Superadmin</span>
+                      </div>
+                    </div>
+                    <div class="info__column">
+                      <span class="info__devices">
+                        <span class="icon"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-block__footer">
+                    <div class="card-block__details details">
+                      <a href="#"><span class="icon"></span><span>Detail</span></a>
+                      <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                    </div>
+                    <div class="card-block__notified">
+                      <a href="#">
+                        <span class="icon"></span>
+                        <span>Notified <span id="notifiedCounter">()</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-list__block card-block">
+                  <div class="card-block__header">
+                    <div class="df-row justify-content-between">
+                      <div class="card-block__activity">
+                        <label for="selectCard-2" class="checkbox">
+                          <input type="checkbox" id="selectCard-2" />
+                          <span class="fake-checkbox"></span>
+                        </label>
+                      </div>
+                      <div class="df-row align-items-center">
+                        <ul class="card-block__countries-list">
+                          <li><span class="small-round-icon"></span></li>
+                          <li><span class="small-round-icon"></span></li>
+                        </ul>
+                        <span
+                          class="green-marker activity-marker hint"
+                          data-help="Active"
+                        ></span>
+                      </div>
+                    </div>
+                    <ul class="card-block__filter-list">
+                      <li><span class="icon"></span><span>yes/no</span></li>
+                      <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                    </ul>
+                    <div class="card-block__body">
+                      <div class="card-block__date">
+                        <span>19.09.17 at 15:58</span>
+                      </div>
+                      <div class="card-block__comment">
+                        <p>
+                          Airport hotel the right way to start a short break holiday
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="card-block__group-list">
+                      <li>
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-block__additional-info info">
+                    <div class="info__column">
+                      <div class="info__viewed-count info__item">
+                        <span class="icon"></span><span>69</span>
+                      </div>
+                      <div class="info__comments-count info__item">
+                        <span class="icon"></span><span>23</span>
+                      </div>
+                      <div class="info__admin-card info__item">
+                        <span class="icon"></span><span>Superadmin</span>
+                      </div>
+                    </div>
+                    <div class="info__column">
+                      <span class="info__devices">
+                        <span class="icon"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-block__footer">
+                    <div class="card-block__details details">
+                      <a href="#"><span class="icon"></span><span>Detail</span></a>
+                      <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                    </div>
+                    <div class="card-block__notified">
+                      <a href="#">
+                        <span class="icon"></span>
+                        <span>Notified <span id="notifiedCounter">()</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-list__block card-block">
+                  <div class="card-block__header">
+                    <div class="df-row justify-content-between">
+                      <div class="card-block__activity">
+                        <label for="selectCard-3" class="checkbox">
+                          <input type="checkbox" id="selectCard-3" />
+                          <span class="fake-checkbox"></span>
+                        </label>
+                      </div>
+                      <div class="df-row align-items-center">
+                        <ul class="card-block__countries-list">
+                          <li><span class="small-round-icon"></span></li>
+                          <li><span class="small-round-icon"></span></li>
+                        </ul>
+                        <span
+                          class="green-marker activity-marker hint"
+                          data-help="Active"
+                        ></span>
+                      </div>
+                    </div>
+                    <ul class="card-block__filter-list">
+                      <li><span class="icon"></span><span>yes/no</span></li>
+                      <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                    </ul>
+                    <div class="card-block__body">
+                      <div class="card-block__date">
+                        <span>19.09.17 at 15:58</span>
+                      </div>
+                      <div class="card-block__comment">
+                        <p>
+                          Airport hotel the right way to start a short break holiday
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="card-block__group-list">
+                      <li>
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-block__additional-info info">
+                    <div class="info__column">
+                      <div class="info__viewed-count info__item">
+                        <span class="icon"></span><span>69</span>
+                      </div>
+                      <div class="info__comments-count info__item">
+                        <span class="icon"></span><span>23</span>
+                      </div>
+                      <div class="info__admin-card info__item">
+                        <span class="icon"></span><span>Superadmin</span>
+                      </div>
+                    </div>
+                    <div class="info__column">
+                      <span class="info__devices">
+                        <span class="icon"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-block__footer">
+                    <div class="card-block__details details">
+                      <a href="#"><span class="icon"></span><span>Detail</span></a>
+                      <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                    </div>
+                    <div class="card-block__notified">
+                      <a href="#">
+                        <span class="icon"></span>
+                        <span>Notified <span id="notifiedCounter">()</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-list__block card-block">
+                  <div class="card-block__header">
+                    <div class="df-row justify-content-between">
+                      <div class="card-block__activity">
+                        <label for="selectCard-4" class="checkbox">
+                          <input type="checkbox" id="selectCard-4" />
+                          <span class="fake-checkbox"></span>
+                        </label>
+                      </div>
+                      <div class="df-row align-items-center">
+                        <ul class="card-block__countries-list">
+                          <li><span class="small-round-icon"></span></li>
+                          <li><span class="small-round-icon"></span></li>
+                        </ul>
+                        <span
+                          class="green-marker activity-marker hint"
+                          data-help="Active"
+                        ></span>
+                      </div>
+                    </div>
+                    <ul class="card-block__filter-list">
+                      <li><span class="icon"></span><span>yes/no</span></li>
+                      <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                    </ul>
+                    <div class="card-block__body">
+                      <div class="card-block__date">
+                        <span>19.09.17 at 15:58</span>
+                      </div>
+                      <div class="card-block__comment">
+                        <p>
+                          Airport hotel the right way to start a short break holiday
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="card-block__group-list">
+                      <li>
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-block__additional-info info">
+                    <div class="info__column">
+                      <div class="info__viewed-count info__item">
+                        <span class="icon"></span><span>69</span>
+                      </div>
+                      <div class="info__comments-count info__item">
+                        <span class="icon"></span><span>23</span>
+                      </div>
+                      <div class="info__admin-card info__item">
+                        <span class="icon"></span><span>Superadmin</span>
+                      </div>
+                    </div>
+                    <div class="info__column">
+                      <span class="info__devices">
+                        <span class="icon"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-block__footer">
+                    <div class="card-block__details details">
+                      <a href="#"><span class="icon"></span><span>Detail</span></a>
+                      <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                    </div>
+                    <div class="card-block__notified">
+                      <a href="#">
+                        <span class="icon"></span>
+                        <span>Notified <span id="notifiedCounter">()</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-list__block card-block">
+                    <div class="card-block__header">
+                      <div class="df-row justify-content-between">
+                        <div class="card-block__activity">
+                          <label for="selectCard-5" class="checkbox">
+                            <input type="checkbox" id="selectCard-5" />
+                            <span class="fake-checkbox"></span>
+                          </label>
+                        </div>
+                        <div class="df-row align-items-center">
+                          <ul class="card-block__countries-list">
+                            <li><span class="small-round-icon"></span></li>
+                            <li><span class="small-round-icon"></span></li>
+                          </ul>
+                          <span
+                            class="green-marker activity-marker hint"
+                            data-help="Active"
+                          ></span>
+                        </div>
+                      </div>
+                      <ul class="card-block__filter-list">
+                        <li><span class="icon"></span><span>yes/no</span></li>
+                        <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                      </ul>
+                      <div class="card-block__body">
+                        <div class="card-block__date">
+                          <span>19.09.17 at 15:58</span>
+                        </div>
+                        <div class="card-block__comment">
+                          <p>
+                            Airport hotel the right way to start a short break holiday
+                          </p>
+                        </div>
+                      </div>
+                      <ul class="card-block__group-list">
+                        <li>
+                          <a href="#">Travel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-block__additional-info info">
+                      <div class="info__column">
+                        <div class="info__viewed-count info__item">
+                          <span class="icon"></span><span>69</span>
+                        </div>
+                        <div class="info__comments-count info__item">
+                          <span class="icon"></span><span>23</span>
+                        </div>
+                        <div class="info__admin-card info__item">
+                          <span class="icon"></span><span>Superadmin</span>
+                        </div>
+                      </div>
+                      <div class="info__column">
+                        <span class="info__devices">
+                          <span class="icon"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-block__footer">
+                      <div class="card-block__details details">
+                        <a href="#"><span class="icon"></span><span>Detail</span></a>
+                        <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                      </div>
+                      <div class="card-block__notified">
+                        <a href="#">
+                          <span class="icon"></span>
+                          <span>Notified <span id="notifiedCounter">()</span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-list__block card-block">
+                      <div class="card-block__header">
+                        <div class="df-row justify-content-between">
+                          <div class="card-block__activity">
+                            <label for="selectCard-6" class="checkbox">
+                              <input type="checkbox" id="selectCard-6" />
+                              <span class="fake-checkbox"></span>
+                            </label>
+                          </div>
+                          <div class="df-row align-items-center">
+                            <ul class="card-block__countries-list">
+                              <li><span class="small-round-icon"></span></li>
+                              <li><span class="small-round-icon"></span></li>
+                            </ul>
+                            <span
+                              class="green-marker activity-marker hint"
+                              data-help="Active"
+                            ></span>
+                          </div>
+                        </div>
+                        <ul class="card-block__filter-list">
+                          <li><span class="icon"></span><span>yes/no</span></li>
+                          <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                        </ul>
+                        <div class="card-block__body">
+                          <div class="card-block__date">
+                            <span>19.09.17 at 15:58</span>
+                          </div>
+                          <div class="card-block__comment">
+                            <p>
+                              Airport hotel the right way to start a short break holiday
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="card-block__group-list">
+                          <li>
+                            <a href="#">Travel</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card-block__additional-info info">
+                        <div class="info__column">
+                          <div class="info__viewed-count info__item">
+                            <span class="icon"></span><span>69</span>
+                          </div>
+                          <div class="info__comments-count info__item">
+                            <span class="icon"></span><span>23</span>
+                          </div>
+                          <div class="info__admin-card info__item">
+                            <span class="icon"></span><span>Superadmin</span>
+                          </div>
+                        </div>
+                        <div class="info__column">
+                          <span class="info__devices">
+                            <span class="icon"></span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-block__footer">
+                        <div class="card-block__details details">
+                          <a href="#"><span class="icon"></span><span>Detail</span></a>
+                          <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                        </div>
+                        <div class="card-block__notified">
+                          <a href="#">
+                            <span class="icon"></span>
+                            <span>Notified <span id="notifiedCounter">()</span></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__block card-block">
+                  <div class="card-block__header">
+                    <div class="df-row justify-content-between">
+                      <div class="card-block__activity">
+                        <label for="selectCard-7" class="checkbox">
+                          <input type="checkbox" id="selectCard-7" />
+                          <span class="fake-checkbox"></span>
+                        </label>
+                      </div>
+                      <div class="df-row align-items-center">
+                        <ul class="card-block__countries-list">
+                          <li><span class="small-round-icon"></span></li>
+                          <li><span class="small-round-icon"></span></li>
+                        </ul>
+                        <span
+                          class="green-marker activity-marker hint"
+                          data-help="Active"
+                        ></span>
+                      </div>
+                    </div>
+                    <ul class="card-block__filter-list">
+                      <li><span class="icon"></span><span>yes/no</span></li>
+                      <li class="hint" data-help="Targed group"><span class="icon"></span><span>helsinki group</span></li>
+                    </ul>
+                    <div class="card-block__body">
+                      <div class="card-block__date">
+                        <span>19.09.17 at 15:58</span>
+                      </div>
+                      <div class="card-block__comment">
+                        <p>
+                          Airport hotel the right way to start a short break holiday
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="card-block__group-list">
+                      <li>
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-block__additional-info info">
+                    <div class="info__column">
+                      <div class="info__viewed-count info__item">
+                        <span class="icon"></span><span>69</span>
+                      </div>
+                      <div class="info__comments-count info__item">
+                        <span class="icon"></span><span>23</span>
+                      </div>
+                      <div class="info__admin-card info__item">
+                        <span class="icon"></span><span>Superadmin</span>
+                      </div>
+                    </div>
+                    <div class="info__column">
+                      <span class="info__devices">
+                        <span class="icon"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-block__footer">
+                    <div class="card-block__details details">
+                      <a href="#"><span class="icon"></span><span>Detail</span></a>
+                      <a href="#"><span class="icon"></span><span>Statistic</span></a>
+                    </div>
+                    <div class="card-block__notified">
+                      <a href="#">
+                        <span class="icon"></span>
+                        <span>Notified <span id="notifiedCounter">()</span></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__select select-all">
+          <div class="select-all__btn">
+            <label for="selectAll">
+              <input type="checkbox" id="selectAll" />
+              <span class="fake-checkbox"></span>
+              <span>Select all visible</span>
+            </label>
+          </div>
+          <div class="select__counter counter">
+            <span class="counter__block">1</span>
+            <span class="counter__text">item selected</span>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a href="#"><span class="icon"></span><span>Publish</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Archive</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Dublicate</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Folder</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Target</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Report</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Export</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon"></span><span>Delete</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__keyboard">
+          <p>
+            <strong>shift+click</strong> to select, <strong>esc</strong> to
+            deselect all
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
